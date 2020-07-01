@@ -1,0 +1,24 @@
+@font-face {
+    font-family: IBMPlexSans-Regular;
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: TTFirsNeue-Bold;
+    src: url('../fonts/TTFirsNeue/TTFirsNeue-Bold.ttf');
+}
+
+@font-face {
+    font-family: IBMPlexSans-LightItalic;
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: TTFirsNeue-Regular;
+    src: url('../fonts/TTFirsNeue/TTFirsNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: IBMPlexSans-Bold;
+    src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
+}

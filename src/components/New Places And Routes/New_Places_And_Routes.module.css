@@ -1,0 +1,275 @@
+@media (min-width: 1024px) {
+    .block {
+        margin-top: var(--vertical-margin-XL--min-width-1024);
+    }
+}
+
+@media (max-width: 1023px) {
+    .block {
+        margin-top: var(--vertical-margin-XL--max-width-1023);
+    }
+}
+
+.title {
+    position: relative;
+    color: #000;
+    font-family: 'TTFirsNeue-Bold', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .title {
+        height: 48px;
+        margin-bottom: var(--vertical-margin-L--min-width-1024);
+        font-size: 48px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .title {
+        height: 33px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .title {
+        margin-bottom: var(--vertical-margin-L--max-width-1023);
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .title {
+        height: 64px;
+        line-height: 30px;
+    }
+}
+
+.italicText {
+    font-family: IBMPlexSans-LightItalic, serif;
+}
+
+@media (min-width: 768px) {
+    .listItems {
+        display: grid;
+    }
+}
+
+@media (min-width: 768px) {
+    .listItems {
+        grid-template-areas: "first-item first-item second-item second-item";
+    }
+}
+
+@media (min-width: 1024px) {
+    .listItems {
+        grid-column-gap: 40px;
+        grid-row-gap: var(--vertical-margin-L--min-width-1024);
+        grid-template-columns: repeat(4, 206px);
+        grid-template-rows: 460px 280px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .listItems {
+        grid-column-gap: 20px;
+        grid-row-gap: var(--vertical-margin-L--max-width-1023);
+        grid-template-columns: repeat(4, 166px);
+        grid-template-rows: 345px 286px 307px;
+    }
+}
+
+@media (max-width: 767px) {
+    .listItems {
+        height: 342px; /* delete */
+        overflow: hidden; /* delete */
+    }
+}
+
+@media (min-width: 768px) {
+    .listPoint:first-child {
+        grid-area: first-item;
+    }
+}
+
+@media (min-width: 768px) {
+    .listPoint:nth-child(2) {
+        grid-area: second-item;
+    }
+}
+
+@media (min-width: 1024px) {
+    .listPoint:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .listPoint {
+        width: 275px;
+    }
+}
+
+.listPointImg {
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .listPointImg {
+        margin-bottom: var(--vertical-margin-M);
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .listPoint:first-child .listPointImg,
+    .listPoint:nth-child(2) .listPointImg {
+        height: 263px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .listPoint:first-child .listPointImg,
+    .listPoint:nth-child(2) .listPointImg {
+        margin-bottom: var(--vertical-margin-M);
+    }
+
+    .listPoint:nth-child(n+3) .listPointImg {
+        margin-bottom: var(--vertical-margin-S);
+    }
+}
+
+.listPointImg img {
+    margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+    .listPoint:first-child .listPointImg img,
+    .listPoint:nth-child(2) .listPointImg img {
+        height: inherit;
+    }
+}
+
+.listPointTagsL {
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 1024px) {
+    .listPointTagsL {
+        right: 2px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .listPointTagsL {
+        right: 0;
+    }
+}
+
+.listPointTagsM {
+    position: absolute;
+    top: -8px;
+    right: -7px;
+}
+
+@media (min-width: 1024px) {
+    .listPointTagsL .listPointNew,
+    .listPointTagsL .listPointRoute {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .listPointTagsL .listPointNew,
+    .listPointTagsL .listPointRoute {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.listPointTagsM .listPointNew,
+.listPointTagsM .listPointRoute {
+    width: 40px;
+    height: 40px;
+}
+
+.listPointNew {
+    margin-bottom: 8px;
+    background: url('/_next/static/chunks/images/icons/LabelNew.svg') no-repeat center;
+    background-size: cover;
+}
+
+.listPointRoute {
+    background: url('/_next/static/chunks/images/icons/LabelRoute.svg') no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 1023px) {
+    .listPointDescription {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .listPoint:first-child .listPointDescription,
+    .listPoint:nth-child(2) .listPointDescription {
+        max-height: 67px;
+    }
+
+    .listPoint:nth-child(n+3) .listPointDescription {
+        max-height: 153px;
+    }
+}
+
+@media (max-width: 767px) {
+    .listPointDescription {
+        height: 122px;
+    }
+}
+
+.listPointTitle {
+    color: var(--color--green);
+    font-family: TTFirsNeue-Bold, sans-serif;
+    font-style: normal;
+}
+
+@media (min-width: 1024px) {
+    .listPoint:first-child .listPointTitle,
+    .listPoint:nth-child(2) .listPointTitle {
+        margin-bottom: var(--vertical-margin-S);
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .listPoint:first-child .listPointTitle,
+    .listPoint:nth-child(2) .listPointTitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.listPoint:nth-child(n+3) .listPointTitle {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.listPoint:hover .listPointTitle{
+    color: #000;
+    text-decoration: underline;
+}
+
+.listPointText {
+    color: #7a7a7a;
+    font-family: IBMPlexSans-Regular, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+}
