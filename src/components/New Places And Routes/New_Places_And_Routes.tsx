@@ -1,5 +1,15 @@
 import React, {Component} from 'react';
 import styles from './New_Places_And_Routes.module.css';
+import Image56 from '../../assets/images/image 56.png';
+import Image82 from '../../assets/images/image 82.png';
+import WithoutPhoto_Square_Orange from '../../assets/images/WithoutPhoto_Square_Orange.png';
+import plotinka1 from '../../assets/images/2009plotinka 1.png';
+import WithoutPhoto_Circle_Pink from '../../assets/images/WithoutPhoto_Circle_Pink.png';
+import plotinka2 from '../../assets/images/2009plotinka 2.png';
+import Image91 from '../../assets/images/image 91.png';
+import Image92 from '../../assets/images/image 92.png';
+import Image93 from '../../assets/images/image 93.png';
+import Image94 from '../../assets/images/image 94.png';
 
 export default class NewPlacesRoutes extends Component {
 
@@ -18,7 +28,7 @@ export default class NewPlacesRoutes extends Component {
                                     <div className={styles.listPointNew}></div>
                                     <div className={styles.listPointRoute}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 56.png" alt=""/>
+                                <img src={Image56} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>10 самых знаменитых<br/>арт-объектов Екатеринбурга
@@ -34,7 +44,7 @@ export default class NewPlacesRoutes extends Component {
                                 <div className={styles.listPointTagsL}>
                                     <div className={styles.listPointNew}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 82.png" alt=""/>
+                                <img src={Image82} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Ельцин-центр</h3>
@@ -49,7 +59,7 @@ export default class NewPlacesRoutes extends Component {
                                 <div className={styles.listPointTagsM}>
                                     <div className={styles.listPointNew}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/WithoutPhoto_Square_Orange.png" alt=""/>
+                                <img src={WithoutPhoto_Square_Orange} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Инсталляция в рамках фестиваля</h3>
@@ -65,7 +75,7 @@ export default class NewPlacesRoutes extends Component {
                                     <div className={styles.listPointNew}></div>
                                     <div className={styles.listPointRoute}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/2009plotinka 1.png" alt=""/>
+                                <img src={plotinka1} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>20 топовых исторических мест Екатеринбурга</h3>
@@ -80,7 +90,7 @@ export default class NewPlacesRoutes extends Component {
                                 <div className={styles.listPointTagsM}>
                                     <div className={styles.listPointNew}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/WithoutPhoto_Circle_Pink.png" alt=""/>
+                                <img src={WithoutPhoto_Circle_Pink} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Белая башня</h3>
@@ -95,7 +105,7 @@ export default class NewPlacesRoutes extends Component {
                                 <div className={styles.listPointTagsM}>
                                     <div className={styles.listPointNew}></div>
                                 </div>
-                                <img src="/_next/static/chunks/images/2009plotinka 2.png" alt=""/>
+                                <img src={plotinka2} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Цветочный портал</h3>
@@ -106,7 +116,7 @@ export default class NewPlacesRoutes extends Component {
                     <li className={styles.listPoint}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
-                                <img src="/_next/static/chunks/images/image 91.png" alt=""/>
+                                <img src={Image91} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Инсталляция в рамках фестиваля</h3>
@@ -118,7 +128,7 @@ export default class NewPlacesRoutes extends Component {
                     <li className={styles.listPoint}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
-                                <img src="/_next/static/chunks/images/image 92.png" alt=""/>
+                                <img src={Image92} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Исторический сквер</h3>
@@ -130,7 +140,7 @@ export default class NewPlacesRoutes extends Component {
                     <li className={styles.listPoint}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
-                                <img src="/_next/static/chunks/images/image 93.png" alt=""/>
+                                <img src={Image93} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Харитоновский сад</h3>
@@ -142,7 +152,7 @@ export default class NewPlacesRoutes extends Component {
                     <li className={styles.listPoint}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
-                                <img src="/_next/static/chunks/images/image 94.png" alt=""/>
+                                <img src={Image94} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Смотровая площадка</h3>

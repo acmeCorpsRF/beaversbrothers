@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import styles from './Header.module.css';
+import Group from '../../assets/images/header/actions/Group 206.png';
+import Logo from '../../assets/images/header/logo.svg';
 
 
 export default class Header extends Component {
@@ -29,7 +31,7 @@ export default class Header extends Component {
                 <div className={styles.block}>
                     <div className={styles.logoBlock}>
                         <a className={styles.logo} href="/">
-                            <img src="/_next/static/chunks/images/header/logo.svg" alt="Мы с Урала"/>
+                            <img src={Logo} alt="Мы с Урала"/>
                         </a>
                         <span className={styles.title}>Истории.<br/>Маршруты. Места.</span>
                     </div>
@@ -53,7 +55,7 @@ export default class Header extends Component {
                         <button className={styles.actionsAdd}>Добваить</button>
                         <a href="/" className={styles.actionsAuth}>Войти</a>
                         <a href="/" className={styles.actionsProfile}>
-                            <img src="/_next/static/chunks/images/header/actions/Group 206.png" alt="User"/>
+                            <img src={Group} alt="User"/>
                         </a>
                     </div>
                 </div>

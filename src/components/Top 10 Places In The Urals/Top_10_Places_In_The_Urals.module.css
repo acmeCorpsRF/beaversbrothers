@@ -224,17 +224,17 @@
 [data-bg="orange-line"] .listPointTags::before {
     top: -8px;
     right: -9px;
-    background: url('/_next/static/chunks/images/LabelKids.svg') center no-repeat;
+    background: url('../../assets/images/LabelKids.svg') center no-repeat;
 }
 
 [data-bg="green-line"] .listPointTags::before {
     top: -11px;
     right: -7px;
-    background: url('/_next/static/chunks/images/LabelBasko.svg') center no-repeat;
+    background: url('../../assets/images/LabelBasko.svg') center no-repeat;
 }
 
 [data-bg="coral-line"] .listPointTags {
-    background-image: url('/_next/static/chunks/images/coral-line.svg');
+    background-image: url('../../assets/images/coral-line.svg');
 }
 
 @media (min-width: 1024px) {
@@ -256,7 +256,7 @@
 }
 
 [data-bg="orange-line"] .listPointTags {
-    background-image: url('/_next/static/chunks/images/orange-line.svg');
+    background-image: url('../../assets/images/orange-line.svg');
 }
 
 @media (min-width: 1024px) {
@@ -273,7 +273,7 @@
 }
 
 [data-bg="green-line"] .listPointTags {
-    background-image: url('/_next/static/chunks/images/green-lines.svg');
+    background-image: url('../../assets/images/green-lines.svg');
 }
 
 @media (min-width: 1024px) {

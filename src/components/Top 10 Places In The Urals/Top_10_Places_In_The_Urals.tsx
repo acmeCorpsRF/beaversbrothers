@@ -1,5 +1,15 @@
 import React, {Component} from 'react';
 import styles from './Top_10_Places_In_The_Urals.module.css';
+import CircleObject from '../../assets/images/CircleObject.png';
+import Photo from '../../assets/images/Photo.png';
+import Image91 from '../../assets/images/image 91.png';
+import Image92 from '../../assets/images/image 92.png';
+import Image93 from '../../assets/images/image 93.png';
+import Image94 from '../../assets/images/image 94.png';
+import Image95 from '../../assets/images/image 95.png';
+import Image96 from '../../assets/images/image 96.png';
+import Image97 from '../../assets/images/image 97.png';
+import Image98 from '../../assets/images/image 98.png';
 
 export default class TopPlacesUrals extends Component {
 
@@ -14,7 +24,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>1</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/CircleObject.png" alt=""/>
+                                <img src={CircleObject} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Невьянская башня
@@ -29,7 +39,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>2</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/Photo.png" alt=""/>
+                                <img src={Photo} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Ганина яма</h3>
@@ -43,7 +53,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>3</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 91.png" alt=""/>
+                                <img src={Image91} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Зюраткуль</h3>
@@ -57,7 +67,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>4</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 92.png" alt=""/>
+                                <img src={Image92} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Верхотурье</h3>
@@ -71,7 +81,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>5</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 93.png" alt=""/>
+                                <img src={Image93} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Аркаим</h3>
@@ -85,7 +95,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>6</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 94.png" alt=""/>
+                                <img src={Image94} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Оленьи ручьи</h3>
@@ -99,7 +109,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>7</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 95.png" alt=""/>
+                                <img src={Image95} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Конжаковский камень</h3>
@@ -113,7 +123,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>8</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 96.png" alt=""/>
+                                <img src={Image96} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Качканар</h3>
@@ -127,7 +137,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>9</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 97.png" alt=""/>
+                                <img src={Image97} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Аракульский Шихан</h3>
@@ -141,7 +151,7 @@ export default class TopPlacesUrals extends Component {
                                 <div className={styles.listPointTags}>
                                     <span className={styles.listPointNumber}>10</span>
                                 </div>
-                                <img src="/_next/static/chunks/images/image 98.png" alt=""/>
+                                <img src={Image98} alt=""/>
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Граница европы и Азии</h3>
