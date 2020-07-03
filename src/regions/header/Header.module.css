@@ -9,6 +9,7 @@
 
 .header::after {
     position: absolute;
+    z-index: 2;
     right: 0;
     bottom: -5px;
     left: 0;
@@ -29,11 +30,12 @@
 
 .logoBlock {
     display: flex;
+    align-items: center;
 }
 
 @media (min-width: 546px) {
     .logoBlock {
-        width: 241px;
+        width: 278px;
     }
 }
 
@@ -48,10 +50,10 @@
     font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    line-height: 16px;
+    line-height: 14px;
 }
 
-@media (max-width: 545px) {
+@media (max-width: 590px) {
     .title {
         display: none;
     }
@@ -59,11 +61,6 @@
 
 .menu {
     position: relative;
-    display: flex;
-    width: 391px;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 20px;
     color: var(--color--green);
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 18px;
@@ -72,31 +69,80 @@
     line-height: 20px;
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
     .menu {
-        display: none;
+        display: flex;
+        width: 391px;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
     }
 }
 
-.menuPoint {
-    position: absolute;
-    top: 3px;
+@media (max-width: 1023px) {
+    .menu {
+        position: fixed;
+        z-index: 1;
+        top: 60px;
+        bottom: 0;
+        left: 0;
+        width: 320px;
+        padding-top: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(var(--rgb--green-light), 0.1);
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+    }
 }
 
-.menuPoint:nth-child(2) {
-    left: 84px;
+.menuOpen {
+    transform: translateX(0);
 }
 
-.menuPoint:nth-child(3) {
-    left: 206px;
+@media (min-width: 1024px) {
+    .menuPoint {
+        position: absolute;
+        top: 3px;
+    }
+
+    .menuPoint:nth-child(2) {
+        left: 84px;
+    }
+
+    .menuPoint:nth-child(3) {
+        left: 206px;
+    }
+
+    .menuPoint:nth-child(4) {
+        left: 291px;
+    }
 }
 
-.menuPoint:nth-child(4) {
-    left: 291px;
+@media (max-width: 1023px) {
+    .menuPoint:not(:last-child) {
+        border-bottom: 1px solid rgba(var(--rgb--green-light), 0.3);
+    }
 }
 
-.menuPointLink:hover {
-    font-family: TTFirsNeue-Bold, sans-serif;
+.menuPointLink {
+    transition: all 0.3s linear;
+}
+
+@media (min-width: 1024px) {
+    .menuPointLink:hover {
+        font-family: TTFirsNeue-Bold, sans-serif;
+    }
+}
+
+@media (max-width: 1023px) {
+    .menuPointLink {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .menuPointLink:hover {
+        background-color: rgba(var(--rgb--green-light), 0.3);
+    }
 }
 
 .actions {
@@ -117,6 +163,7 @@
     background-position: 7px 7px;
     background-repeat: no-repeat;
     border-radius: 20px;
+    transition: all 0.3s linear;
 }
 
 .actionsFavorites:hover {
@@ -156,6 +203,7 @@
     font-weight: normal;
     line-height: 16px;
     text-indent: 14px;
+    transition: all 0.3s linear;
 }
 
 .actionsAdd:hover {
@@ -180,6 +228,7 @@
     font-weight: normal;
     line-height: 16px;
     text-indent: 14px;
+    transition: all 0.3s linear;
 }
 
 .actionsAuth:hover {
@@ -192,4 +241,63 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.loginIn {
+    display: none;
+}
+
+.loggedIn {
+    display: block;
+}
+
+.btnMenu {
+    display: block;
+    margin-right: 15px;
+    outline: 0;
+    border: 0;
+    background: none;
+}
+
+@media (min-width: 1024px) {
+    .btnMenu {
+        display: none;
+    }
+}
+
+.btnMenu.active span:nth-of-type(1) {
+    transform: rotate(45deg) translate(8px, 2px);
+    width: 20px;
+}
+
+.btnMenu.active span:nth-of-type(2) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btnMenu.active span:nth-of-type(3) {
+    transform: rotate(-45deg) translate(6px, -1px);
+    width: 20px;
+}
+
+.btnMenu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: rgb(var(--rgb--green-light), 0.3);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btnMenu:hover span {
+    background-color: rgb(var(--rgb--green-light), 0.7);
+}
+
+.btnMenu:hover span:nth-of-type(1) {
+    width: 15px;
+}
+
+.btnMenu:hover span:nth-of-type(3) {
+    width: 15px;
 }

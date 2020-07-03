@@ -1,10 +1,10 @@
-import React, {Component} from "react";
+import * as React from 'react';
 import Header from '../regions/header/Header';
 import Main from '../regions/main/Main';
 
 import {Layout} from "~/components/Layout/Layout"
 
-export default class extends Component {
+export default class extends React.Component {
     render() {
         return (
             <Layout>

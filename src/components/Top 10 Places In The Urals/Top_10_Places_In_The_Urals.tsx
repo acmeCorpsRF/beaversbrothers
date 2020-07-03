@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import styles from './Top_10_Places_In_The_Urals.module.css';
 import CircleObject from '../../assets/images/CircleObject.png';
 import Photo from '../../assets/images/Photo.png';
@@ -10,15 +10,16 @@ import Image95 from '../../assets/images/image 95.png';
 import Image96 from '../../assets/images/image 96.png';
 import Image97 from '../../assets/images/image 97.png';
 import Image98 from '../../assets/images/image 98.png';
+import cn from 'classnames';
 
-export default class TopPlacesUrals extends Component {
+export default class TopPlacesUrals extends React.Component {
 
     render() {
         return (
             <div className={styles.block}>
                 <h1 className={styles.title}>ТОП <span className={styles.italicText}>10</span> мест Урала</h1>
                 <ul className={styles.listItems}>
-                    <li className={styles.listPoint} data-bg="coral-line">
+                    <li className={cn(styles.listPoint,styles.firstPlace)}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
                                 <div className={styles.listPointTags}>
@@ -29,7 +30,8 @@ export default class TopPlacesUrals extends Component {
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Невьянская башня
                                 </h3>
-                                <p className={styles.listPointText}>Остатки прошлого величия промышленников Демидовых</p>
+                                <p className={styles.listPointText}>Остатки прошлого величия промышленников
+                                    Демидовых</p>
                             </div>
                         </a>
                     </li>
@@ -43,7 +45,8 @@ export default class TopPlacesUrals extends Component {
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Ганина яма</h3>
-                                <p className={styles.listPointText}>В 1918 году в шахту бросили останки представителей царской династии Романовых</p>
+                                <p className={styles.listPointText}>В 1918 году в шахту бросили останки представителей
+                                    царской династии Романовых</p>
                             </div>
                         </a>
                     </li>
@@ -75,7 +78,7 @@ export default class TopPlacesUrals extends Component {
                             </div>
                         </a>
                     </li>
-                    <li className={styles.listPoint} data-bg="orange-line">
+                    <li className={cn(styles.listPoint, styles.takeChildren)}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
                                 <div className={styles.listPointTags}>
@@ -117,7 +120,7 @@ export default class TopPlacesUrals extends Component {
                             </div>
                         </a>
                     </li>
-                    <li className={styles.listPoint} data-bg="green-line">
+                    <li className={cn(styles.listPoint, styles.hereBasco)}>
                         <a href="/" className={styles.listPointLink}>
                             <div className={styles.listPointImg}>
                                 <div className={styles.listPointTags}>
@@ -127,7 +130,8 @@ export default class TopPlacesUrals extends Component {
                             </div>
                             <div className={styles.listPointDescription}>
                                 <h3 className={styles.listPointTitle}>Качканар</h3>
-                                <p className={styles.listPointText}>Причудливые скальные останцы и буддийский монастырь</p>
+                                <p className={styles.listPointText}>Причудливые скальные останцы и буддийский
+                                    монастырь</p>
                             </div>
                         </a>
                     </li>

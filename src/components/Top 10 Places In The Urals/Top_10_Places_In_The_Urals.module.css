@@ -221,69 +221,69 @@
     }
 }
 
-[data-bg="orange-line"] .listPointTags::before {
+.takeChildren .listPointTags::before {
     top: -8px;
     right: -9px;
     background: url('../../assets/images/LabelKids.svg') center no-repeat;
 }
 
-[data-bg="green-line"] .listPointTags::before {
+.hereBasco .listPointTags::before {
     top: -11px;
     right: -7px;
     background: url('../../assets/images/LabelBasko.svg') center no-repeat;
 }
 
-[data-bg="coral-line"] .listPointTags {
+.firstPlace .listPointTags {
     background-image: url('../../assets/images/coral-line.svg');
 }
 
 @media (min-width: 1024px) {
-    [data-bg="coral-line"] .listPointTags {
+    .firstPlace .listPointTags {
         background-position: center 43px;
     }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-    [data-bg="coral-line"] .listPointTags {
+    .firstPlace .listPointTags {
         background-position: center 34px;
     }
 }
 
 @media (max-width: 767px) {
-    [data-bg="coral-line"] .listPointTags {
+    .firstPlace .listPointTags {
         background-position: center;
     }
 }
 
-[data-bg="orange-line"] .listPointTags {
+.takeChildren .listPointTags {
     background-image: url('../../assets/images/orange-line.svg');
 }
 
 @media (min-width: 1024px) {
-    [data-bg="orange-line"] .listPointTags {
+    .takeChildren .listPointTags {
         background-position: center 60px;
     }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-    [data-bg="orange-line"] .listPointTags {
+    .takeChildren .listPointTags {
         background-position: center 56px;
         background-size: 130px;
     }
 }
 
-[data-bg="green-line"] .listPointTags {
+.hereBasco .listPointTags {
     background-image: url('../../assets/images/green-lines.svg');
 }
 
 @media (min-width: 1024px) {
-    [data-bg="green-line"] .listPointTags {
+    .hereBasco .listPointTags {
         background-position: center 84px;
     }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-    [data-bg="green-line"] .listPointTags {
+    .hereBasco .listPointTags {
         background-position: center 72px;
         background-size: 122px;
     }

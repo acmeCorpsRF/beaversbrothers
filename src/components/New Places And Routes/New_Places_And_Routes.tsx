@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import styles from './New_Places_And_Routes.module.css';
 import Image56 from '../../assets/images/image 56.png';
 import Image82 from '../../assets/images/image 82.png';
@@ -11,7 +11,7 @@ import Image92 from '../../assets/images/image 92.png';
 import Image93 from '../../assets/images/image 93.png';
 import Image94 from '../../assets/images/image 94.png';
 
-export default class NewPlacesRoutes extends Component {
+export default class NewPlacesRoutes extends React.Component {
 
     render() {
         return (
